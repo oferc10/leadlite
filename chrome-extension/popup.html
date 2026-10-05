@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  body{width:320px;margin:0;padding:16px;font-family:Inter,system-ui;background:#F8FAFC}
+  .card{background:white;border-radius:16px;padding:16px;box-shadow:0 4px 12px rgba(0,0,0,0.06);border:1px solid #E2E8F0}
+  h1{font-size:14px;margin:0 0 4px;font-weight:600}
+  p{font-size:11px;color:#64748B;margin:0 0 12px;line-height:1.4}
+  button{width:100%;background:#0F172A;color:white;border:none;padding:10px 14px;border-radius:999px;font-size:12px;font-weight:600;cursor:pointer;margin-top:8px;display:flex;align-items:center;justify-content:center;gap:6px}
+  button:hover{background:#1E293B}
+  button.secondary{background:white;color:#0F172A;border:1px solid #E2E8F0}
+  #preview{margin-top:12px;padding:10px;background:#F1F5F9;border-radius:12px;font-size:11px;display:none;white-space:pre-wrap;word-break:break-word}
+  .badge{display:inline-block;background:#2563EB;color:white;padding:2px 8px;border-radius:999px;font-size:10px;margin-top:6px}
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>LeadLite → Sales Navigator</h1>
+    <p>On a LinkedIn lead page, click below to extract name, company, title and open LeadLite with auto-fill.</p>
+    <button id="extractBtn">🔍 Extract current lead</button>
+    <button id="sendBtn" class="secondary">↗ Send to https://leadlite.netlify.app</button>
+    <div id="preview"></div>
+    <div style="margin-top:12px;font-size:10px;color:#94A3B8;text-align:center">No passwords stored • Works on linkedin.com/sales and /in • v1.1</div>
+  </div>
+<script src="popup.js"></script>
+</body>
+</html>
